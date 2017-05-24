@@ -1,0 +1,52 @@
+{
+  "name": "socket.io-devtools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "dependencies": {
+    "express": "4.15.3",
+    "font-awesome": "4.7.0",
+    "koa": "2.2.0",
+    "koa-router": "7.1.1",
+    "koa-static": "3.0.0",
+    "license-checker": "9.0.2",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-redux": "5.0.3",
+    "react-router": "4.0.0",
+    "react-router-dom": "4.0.0",
+    "react-router-redux": "5.0.0-alpha.4",
+    "redux": "3.6.0",
+    "socket.io-client": "1.7.3"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "6.24.0",
+    "babel-preset-react": "6.23.0",
+    "babel-preset-stage-3": "6.22.0",
+    "babelify": "7.3.0",
+    "browserify": "14.1.0",
+    "gulp": "3.9.1",
+    "gulp-less": "3.3.0",
+    "socket.io": "1.7.3",
+    "vinyl-source-stream": "1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run gen-dep && gulp",
+    "watch": "npm run gen-dep && gulp watch",
+    "start": "npm run build && node .",
+    "gen-dep": "npm install && node ./scripts/gen-dependencies.js",
+    "test-server": "node ./example/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xstoudi/socket.io-devtools.git"
+  },
+  "keywords": [],
+  "author": "Xavier Stouder <xavier@stouder.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xstoudi/socket.io-devtools/issues"
+  },
+  "homepage": "https://github.com/Xstoudi/socket.io-devtools#readme"
+}
