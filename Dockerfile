@@ -11,5 +11,5 @@ RUN wget -O socketio-devtool.zip "https://github.com/Xstoudi/socketio-devtool/ar
     rm socketio-devtool.zip
 
 
-EXPOSE HTTP_ENV
+EXPOSE HTTP_PORT
 CMD ["npm", "start"]
