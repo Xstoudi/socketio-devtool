@@ -5,7 +5,7 @@ ENV HTTP_PORT 3000
 
 WORKDIR /usr/src/socketio-devtool
 
-RUN git clone https://github.com/Xstoudi/socketio-devtool/archive/$VERSION.zip; \
+RUN git clone https://github.com/Xstoudi/socketio-devtool.git \
     cd socketio-devtool \
     npm start;
 
