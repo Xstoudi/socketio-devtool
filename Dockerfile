@@ -3,11 +3,11 @@ FROM node:latest
 ENV VERSION 1.0.3
 ENV HTTP_PORT 3000
 
+RUN mkdir -p /usr/src/socketio-devtool
 WORKDIR /usr/src/socketio-devtool
 
-RUN git clone https://github.com/Xstoudi/socketio-devtool.git; \
-    cd socketio-devtool; \
-    npm start;
+COPY . /usr/src/socketio-devtool
+RUN npm install
 
 EXPOSE $HTTP_PORT
 CMD ["npm", "start"]
