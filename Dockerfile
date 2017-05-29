@@ -1,6 +1,5 @@
 FROM node:latest
 
-ENV VERSION 1.0.3
 ENV HTTP_PORT 3000
 
 RUN mkdir -p /usr/src/socketio-devtool
