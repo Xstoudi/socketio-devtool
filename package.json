@@ -1,6 +1,6 @@
 {
   "name": "socket.io-devtools",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "server/server.js",
   "dependencies": {
