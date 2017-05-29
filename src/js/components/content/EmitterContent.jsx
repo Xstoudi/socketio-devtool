@@ -22,8 +22,8 @@ export default class EmitterContent extends React.Component {
                 </div>
                 <div className="emit-content-type">
                     <span>Send datas as:</span>
-                    <span><input type="radio" onChange={e => this.emitContentType = 'plaintext'} name="data-type" defaultChecked={true} /><label htmlFor="data-type-text">Plain text</label></span>
-                    <span><input type="radio" onChange={e => this.emitContentType = 'json'} name="data-type" /><label htmlFor="data-type-json">JSON</label></span>
+                    <span><input type="radio" onChange={e => this.emitContentType = 'plaintext'} name="data-type" defaultChecked={true} id="data-type-text" /><label htmlFor="data-type-text">Plain text</label></span>
+                    <span><input type="radio" onChange={e => this.emitContentType = 'json'} name="data-type" id="data-type-json" /><label htmlFor="data-type-json">JSON</label></span>
                 </div>
                 <div className="emit-content-box">
                     <textarea ref={input => this.emitContentTextarea = input} className="emit-content" rows="10"></textarea>
